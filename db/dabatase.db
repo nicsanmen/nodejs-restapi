@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS db;
+
+use db;
+
+CREATE TABLE user(
+	id INT(11) NOT NULL AUTO_INCREMENT,
+	username VARCHAR(20),
+	email VARCHAR(40) DEFAULT NULL,
+    PRIMARY KEY (id)
+)
+
+INSERT INTO user (username, email) VALUES 
+(1, 'user1', 'user1@email.com'),
+(2, 'user2', 'user2@email.com'),
+(3, 'user3', 'user3@email.com'),
+(4, 'user4', 'user4@email.com');
